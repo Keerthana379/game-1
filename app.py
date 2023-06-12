@@ -49,7 +49,7 @@ def play_game():
         else:
             prize = ''
 
-        pygame.image.save(canvas, 'flask/static/canvas.png')  # Save the canvas as an image
+        pygame.image.save(canvas, '/var/task/flask/static/canvas.png')
         pygame.quit()
 
         return render_template('play.html', N_CIRCLES=N_CIRCLES, your_score=your_score, message=message, prize=prize)
